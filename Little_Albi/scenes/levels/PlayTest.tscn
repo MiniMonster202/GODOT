@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dsauko8m2sjaq" path="res://icon.svg" id="1_7fivi"]
 [ext_resource type="PackedScene" uid="uid://buacthi6f4edg" path="res://scenes/player/Player.tscn" id="1_xvq8c"]
-[ext_resource type="PackedScene" uid="uid://7ghxtyibom28" path="res://scenes/levels/Object_to_grab.tscn" id="2_sp3w0"]
+[ext_resource type="PackedScene" uid="uid://7ghxtyibom28" path="res://scenes/objects/Object_to_grab.tscn" id="2_sp3w0"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_k43o3"]
 size = Vector2(140, 50)

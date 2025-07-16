@@ -27,9 +27,11 @@ func _ready() -> void:
 func _physics_process(delta):
 	# Giramos el modelo en funcion de la dirección
 	if direction.x < 0:
-		$Model.scale.x = -1
+		$Model.rotation.y = deg_to_rad(180)  # Para girar hacia la izquierda
+		grab_area.rotation.y = deg_to_rad(180) # Girar el area de agarrardo
 	elif direction.x > 0:
-		$Model.scale.x = 1
+		$Model.rotation.y = 0  # Para girar hacia la derecha
+		grab_area.rotation.y = deg_to_rad(0)  # Girar el area de agarrardo
 	
 	# Chequear si tira o empuja para las animaciones
 	if is_grabbing:
