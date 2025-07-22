@@ -100,3 +100,12 @@ func _change_state(new_state: String) -> void:
 		current_state = new_state
 		state_machine.travel(current_state)
 		print("Estado: ",current_state)
+
+func show_memory(memory: MemoryData) -> void:
+	print("Mostrando recuerdo:", memory.memory_id)
+	# Crea una interfaz básica de prueba:
+	var memory_ui = preload("res://scenes/memories/memoryUI.tscn").instantiate()
+	memory_ui.set_memory(memory)
+	get_tree().current_scene.add_child(memory_ui)
+	# Detener movimiento del jugador temporalmente
+	set_physics_process(false)

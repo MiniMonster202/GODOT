@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://v83kd6gf2hwn"]
+
+[ext_resource type="Script" uid="uid://c8uu2w1acycul" path="res://scripts/memories/MemoryTrigger.gd" id="1_q1pp4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ennr0"]
+
+[node name="MemoryTrigger" type="Node3D"]
+script = ExtResource("1_q1pp4")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_ennr0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
