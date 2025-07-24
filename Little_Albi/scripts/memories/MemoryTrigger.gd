@@ -21,3 +21,4 @@ func _on_body_entered(body):
 		audio_player.play()
 		MemInventory.add_memory(memory_data)  # GUARDAMOS
 		body.show_memory(memory_data)
+		queue_free()
