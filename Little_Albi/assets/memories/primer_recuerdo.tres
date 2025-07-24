@@ -1,11 +1,18 @@
-[gd_resource type="Resource" script_class="MemoryData" load_steps=3 format=3 uid="uid://bwqglaaurndmp"]
+[gd_resource type="Resource" script_class="MemoryData" load_steps=5 format=3 uid="uid://bwqglaaurndmp"]
 
 [ext_resource type="Script" uid="uid://dhswaxo87t38" path="res://scripts/memories/MemoryData.gd" id="1_gdhy2"]
 [ext_resource type="Texture2D" uid="uid://dsauko8m2sjaq" path="res://icon.svg" id="1_mhkf2"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mhkf2"]
+albedo_color = Color(0.920671, 0.909964, 0.364478, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_mhkf2"]
+
 [resource]
 script = ExtResource("1_gdhy2")
-memory_id = "primerita_vez"
-memory_text = "Esto es una prueba"
+memory_id = "Recuerdo_1"
+memory_text = "La primerita vez"
 memory_image = ExtResource("1_mhkf2")
+memory_mesh = SubResource("SphereMesh_mhkf2")
+memory_material = SubResource("StandardMaterial3D_mhkf2")
 metadata/_custom_type_script = "uid://dhswaxo87t38"

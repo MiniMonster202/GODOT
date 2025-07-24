@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkagu7ijuytbc"]
+
+[ext_resource type="Script" uid="uid://d2fk4436tr7kw" path="res://scripts/memories/memento.gd" id="1_s2pt8"]
+
+[node name="Memento" type="Node3D"]
+script = ExtResource("1_s2pt8")
+
+[node name="Visual" type="MeshInstance3D" parent="."]

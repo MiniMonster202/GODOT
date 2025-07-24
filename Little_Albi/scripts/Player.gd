@@ -85,6 +85,8 @@ func _input(event):
 					break
 		else: #Estamos agarrando y queremos soltar presionando otra vez
 			release_object()
+	if event.is_action_pressed("open_memory_inventory"):
+		MemoryUI.toggle_inventory()
 
 #Función para generica para soltar objetos
 func release_object() -> void:
