@@ -38,12 +38,9 @@ func show_inventory():
 		memory_list.add_child(button)
 
 func _on_memory_button_pressed(memory_data: MemoryData):
-	# Aquí puedes hacer lo mismo que hace el MemoryTrigger
-	# Por ejemplo:
 	var player = get_tree().current_scene.get_node("Player")
 	if player:
-		player.show_memory(memory_data)
-
+		player.show_memory(memory_data, true) #From_inventory = true
 
 func clear():
 	for child in memory_list.get_children():
