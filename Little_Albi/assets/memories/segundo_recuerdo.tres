@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MemoryData" load_steps=5 format=3 uid="uid://dwvhwyjxn1tst"]
+
+[ext_resource type="Texture2D" uid="uid://dsauko8m2sjaq" path="res://icon.svg" id="1_siysp"]
+[ext_resource type="Script" uid="uid://dhswaxo87t38" path="res://scripts/memories/MemoryData.gd" id="2_o50tg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mhkf2"]
+albedo_color = Color(1, 0.447378, 0.59867, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_siysp"]
+
+[resource]
+script = ExtResource("2_o50tg")
+memory_id = "Recuerdo_2"
+memory_text = "La segundita vez"
+memory_image = ExtResource("1_siysp")
+memory_mesh = SubResource("BoxMesh_siysp")
+memory_material = SubResource("StandardMaterial3D_mhkf2")
+metadata/_custom_type_script = "uid://dhswaxo87t38"

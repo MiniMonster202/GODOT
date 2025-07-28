@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://dsxhx5o0ckkte"]
+[gd_scene load_steps=12 format=3 uid="uid://dsxhx5o0ckkte"]
 
 [ext_resource type="Texture2D" uid="uid://dsauko8m2sjaq" path="res://icon.svg" id="1_7fivi"]
 [ext_resource type="PackedScene" uid="uid://buacthi6f4edg" path="res://scenes/player/Player.tscn" id="1_xvq8c"]
 [ext_resource type="PackedScene" uid="uid://7ghxtyibom28" path="res://scenes/objects/Object_to_grab.tscn" id="2_sp3w0"]
 [ext_resource type="PackedScene" uid="uid://v83kd6gf2hwn" path="res://scenes/memories/MemoryTrigger.tscn" id="4_3kj17"]
 [ext_resource type="Resource" uid="uid://bwqglaaurndmp" path="res://assets/memories/primer_recuerdo.tres" id="5_ufolu"]
+[ext_resource type="Resource" uid="uid://dwvhwyjxn1tst" path="res://assets/memories/segundo_recuerdo.tres" id="6_gxklc"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_k43o3"]
 size = Vector2(140, 50)
@@ -50,6 +51,7 @@ light_color = Color(0.921188, 0.929152, 1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_xvq8c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0019598, 1.28439, 0)
+speed = 6.5
 
 [node name="Area3D" type="StaticBody3D" parent="."]
 
@@ -67,3 +69,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 0)
 [node name="recuerdo_1" parent="." instance=ExtResource("4_3kj17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.4113, 0.0595591, -0.147388)
 memory_data = ExtResource("5_ufolu")
+
+[node name="recuerdo_2" parent="." instance=ExtResource("4_3kj17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.6703, 0.0595591, -0.147388)
+memory_data = ExtResource("6_gxklc")
