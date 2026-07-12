@@ -88,7 +88,7 @@ func _input(event):
 	if event.is_action_pressed("open_memory_inventory"):
 		MemoryUI.toggle_inventory()
 
-#Función para generica para soltar objetos
+#Función genérica para soltar objetos
 func release_object() -> void:
 	if grabbed_object:
 		grabbed_object.release()

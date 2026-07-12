@@ -27,7 +27,7 @@ func show_inventory():
 		var button = TextureButton.new()
 		
 		# Usa la imagen del recuerdo o un placeholder
-		button.texture_normal = preload("res://icon.svg")
+		button.texture_normal = memory.memory_image
 		
 		button.custom_minimum_size = Vector2(64, 64)
 		button.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED

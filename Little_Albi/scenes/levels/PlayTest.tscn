@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dsxhx5o0ckkte"]
+[gd_scene load_steps=13 format=3 uid="uid://dsxhx5o0ckkte"]
 
 [ext_resource type="Texture2D" uid="uid://dsauko8m2sjaq" path="res://icon.svg" id="1_7fivi"]
 [ext_resource type="PackedScene" uid="uid://buacthi6f4edg" path="res://scenes/player/Player.tscn" id="1_xvq8c"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://v83kd6gf2hwn" path="res://scenes/memories/MemoryTrigger.tscn" id="4_3kj17"]
 [ext_resource type="Resource" uid="uid://bwqglaaurndmp" path="res://assets/memories/primer_recuerdo.tres" id="5_ufolu"]
 [ext_resource type="Resource" uid="uid://dwvhwyjxn1tst" path="res://assets/memories/segundo_recuerdo.tres" id="6_gxklc"]
+[ext_resource type="PackedScene" uid="uid://dk3bbv13jag1x" path="res://scenes/objects/lever.tscn" id="7_6vjiu"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_k43o3"]
 size = Vector2(140, 50)
@@ -73,3 +74,6 @@ memory_data = ExtResource("5_ufolu")
 [node name="recuerdo_2" parent="." instance=ExtResource("4_3kj17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.6703, 0.0595591, -0.147388)
 memory_data = ExtResource("6_gxklc")
+
+[node name="lever" parent="." instance=ExtResource("7_6vjiu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7123, -0.0605218, -0.998773)

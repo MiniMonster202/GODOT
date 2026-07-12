@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk3bbv13jag1x"]
+
+[ext_resource type="Script" uid="uid://ba5q8vb6p0nvd" path="res://scripts/lever.gd" id="1_06vmi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wex8l"]
+size = Vector3(0.15, 2, 0.15)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wex8l"]
+size = Vector3(2.72205, 1, 8.4444)
+
+[node name="CharacterBody3D" type="Area3D"]
+script = ExtResource("1_06vmi")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000907183, 1.00507, 0.00188971)
+mesh = SubResource("BoxMesh_wex8l")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228943, 0, 4.19268)
+shape = SubResource("BoxShape3D_wex8l")

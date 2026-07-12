@@ -10,6 +10,11 @@ func set_memory(memory):
 func _ready():
 	$CenterContainer/VBoxContainer/Button.pressed.connect(_on_close)
 
+# Manejar eventos de entrada analógica
+func _input(event):
+	if Input.is_action_just_pressed("escape"):
+		_on_close()
+
 func _on_close():
 	queue_free()
 	
