@@ -1,0 +1,10 @@
+res://Main.tscn
+res://GameBoard/Grid.gd
+res://GameBoard/GameBoard.gd
+res://UnitOverlay/UnitOverlay.gd
+res://GameBoard/UnitPath.gd
+res://Scripts/SupportScenes/Main.gd
+res://Background/Map.tscn
+res://Scripts/SupportScenes/Action_Menu.gd
+res://Scripts/Singletons/Server.gd
+res://Units/Unit.gd

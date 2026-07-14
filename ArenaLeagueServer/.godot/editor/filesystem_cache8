@@ -1,0 +1,9 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1689148915
+default_env.tres::Environment::-1::1656037543::0::1::::<><>::
+icon.png::CompressedTexture2D::1624542074979782133::1624308414::1689148229::1::::<><>::
+::res://Scenes/::1655909491
+::res://Scenes/Instances/::1624308478
+::res://Scenes/Main/::1689148243
+Server.gd::GDScript::-1::1624310336::0::1::::<>Node<>::
+Server.tscn::PackedScene::1836570407142918820::1689148243::0::1::::<><>::res://Scenes/Main/Server.gd
